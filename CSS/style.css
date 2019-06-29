@@ -1,0 +1,85 @@
+.navbar {
+    border-bottom:1px solid #ccc;
+    font-size: 14px;
+    background-color: #fef;
+    font-family: sans-serif;
+}
+
+.form-control {
+    font-size: 14px;
+    height: 30px;
+}
+
+.btn {
+    font-size: 12px;
+        height: 30px;
+}
+
+
+.firstContainer{
+  background: url(../Imagini/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.firstWelcomecover{
+  height: 700px;
+  
+}
+
+.row h1{
+  
+  margin-top: 40px;
+  margin-left: 900px;
+  margin-right: 300px;
+  font-style: oblique;
+  font-family: cursive;
+  font: small-caps bold 24px/1 sans-serif;
+  font-size: 40px;
+  color: violet;
+}
+
+.row h2{
+  
+  margin-top: 300px;
+  margin-left: 900px;
+  margin-right: 300px;
+  font-style: oblique;
+  font-family: cursive;
+  font: small-caps bold 24px/1 sans-serif;
+  font-size: 40px;
+  color:violet;
+}
+  
+.row p{
+  
+  margin-top: 50px;
+  margin-left: 1000px;
+  margin-right: 600px;
+  font-style: oblique;
+  font-family: cursive;
+  font: small-caps bold 24px/1 sans-serif;
+ 
+  
+}
+
+.row a{
+  color:gray;
+}
+  
+.blocksImage{
+
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 0 1 auto;
+    margin: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
