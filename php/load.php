@@ -15,8 +15,8 @@ try {
 }
 
 if ($_POST['op']   =="adduser"){
-    $query="insert into users (first_name,last_name,gender,password,email,cutomer_type)
-     VALUES(:first_name,:last_name, :gender,:password,:email,:cutomer_type)";
+    $query="insert into users (first_name,last_name,gender,password,email,customer_type)
+     VALUES(:first_name,:last_name, :gender,:password,:email,:customer_type)";
     $sth= $connection->prepare($query);
    
     $params=array(
@@ -25,7 +25,7 @@ if ($_POST['op']   =="adduser"){
         ":gender"=>$_POST['gender'],
         ":email"=>$_POST['email'],
         ":password"=>$_POST['password'],
-        ":cutomer_type"=>"U"
+        ":customer_type"=>"U"
 );
     $sth->execute($params);
     

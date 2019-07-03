@@ -1,25 +1,25 @@
 function register(){
 
-    var firstname=$("#first_name").val()
-    var lastname=$("#last_name").val()
+    var first_name=$("#first_name").val()
+    var last_name=$("#last_name").val()
     var gender=$("#gender").val()
-    var email=$("#email").val()
-    var customertype=$("#customer_type")
-    var password=$("#password").val()
+    var email1=$("#email").val()
+    var customer=$("#customer_type").val()
+    var password1=$("#password").val()
     
-
+    debugger;
     obj= {
-        op:"adduser",
-        first_name: firstname,
+    op:"adduser",
+    first_name: first_name,
     last_name:last_name,
     gender: gender,
-    email: email,
-    customerytype: customer_type,
-    password: password
+    email: email1,
+    customer_type: customer,
+    password: password1
     }
     
     $.ajax({
-        url:"PHP/load.php",
+        url:"php/load.php",
         method:"POST",
         data:obj,
         dataType:"json",
@@ -27,7 +27,6 @@ function register(){
            
                 if (data.status=="OK"){
                      alert("ok") 
-                     location.replace("")
                 }
                 else if(data.status=="WRONG"){
                     alert("Mail sau parola gresita")
@@ -38,5 +37,8 @@ function register(){
         }
     
         })
+
+
+    
     
          }
