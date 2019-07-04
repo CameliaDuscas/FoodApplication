@@ -12,7 +12,7 @@ function login(){
             var rez =JSON.parse(data)
            if(rez.Status=="OK"){
                alert("OK")
-               location.replace("")
+               location.replace("http://localhost/RETETE%20PRELUATE%20SI%20INCERCATE/index.html")
            }
            else if(rez.Status=="Wrong"){
 
